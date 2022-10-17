@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <meta charset="UTF-8">
+    <title>Documentation Parser</title>
+</head>
+
+<body>
+    <nav id="appNav">
+        <div id="appColor"></div>
+        <a class="Tools">
+            <div class="topBtns" id="menuBtn">
+                <div class="topIcons">
+                    <img src="/img/menu.png">
+                </div>
+            </div>
+        </a>
+        <a class="Tools">
+            <div class="topBtns" id="homeBtn">
+                <div class="topIcons">
+                    <img src="/img/home.png">
+                </div>
+            </div>
+        </a>
+        <header id="header">
+            <span id="appHeaderTitle">Documentation Parser</span>
+        </header>
+        <a class="Tools">
+            <div class="topBtns" id="goBackBtn">
+                <div class="topIcons">
+                    <img src="/img/goback.png">
+                </div>
+            </div>
+        </a>
+        <a class="Tools">
+            <div class="topBtns" id="settingBtn">
+                <div class="topIcons">
+                    <img src="/img/setting.png">
+                </div>
+            </div>
+        </a>
+    </nav>
+    <!-- The down page. -->
+    <div class="page " id="documentationContent">
+        <!-- The left page. -->
+        <nav id="documentationNav">
+            <div id="allFileWord">
+                <div>所有文件</div>
+            </div>
+            <div class="searchBar">
+                <input name="searchKeyword" placeholder="搜索文件..." class="searchFrame" id="searchKey">
+                <div class="searchBarBtn" id="clearSearchFileBar">✖</div>
+            </div>
+            <div class="fileNew">
+                <input id="inputFile" type="file" name="upload" accept=".js">
+            </div>
+            <div class="fileBtn">
+                <div class="fileBtnSection">
+                    <!--<button class="typeBtn" id="newFileBtn">
+                        <div>新增文件</div>
+                    </button>-->
+                    <!--<input id="inputFile" type="file" name="upload" accept=".js">-->
+                    <button class="typeBtn" id="deleteFileBtn">
+                        <div>刪除文件</div>
+                    </button>
+                    <button class="typeBtn" id="buildNewVersionBtn">
+                        <div>建立新版本</div>
+                    </button>
+                </div>
+            </div>
+            <div class="container"></div>
+            <div class="nodisplay">
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </div>
+    </nav>
+
+    <nav id="menuNav">
+
+        <div class="menuBar">
+            <header class="menuHeader">Tags Search</header>
+            <div class="menuListBtn" id="tagSearshBtn">▼</div>
+        </div>
+        <div class="listContainer" id="tagsList">
+            <div class="searchBar nodisplay" id="tagSearchBar">
+                <input name="searchTags" placeholder="搜索Tags..." class="searchFrame" id="searchTags">
+            </div>
+        </div>
+
+        <div class="menuBar">
+            <header class="menuHeader">Advanced Search</header>
+            <div class="menuListBtn" id="gotoSearch">⇨</div>
+        </div>
+    </nav>
+    <!-- The right page. -->
+    <div id="docummentationCore">
+        <div id="homeScreen">
+            <div class="section">
+                <div class="secHeader" id="childFilename">
+                    <div>子檔名</div>
+                </div>
+            </div>
+
+            <div class="fileBtn">
+                <div class="fileBtnSection">
+                    <button class="typeBtn" id="viewFileBtn">
+                        <div>檢視文件</div>
+                    </button>
+                    <button class="typeBtn" id="copyFileBtn">
+                        <div>複製文件</div>
+                    </button>
+                    <button class="typeBtn" id="renameFileBtn">
+                        <div>重新命名</div>
+                    </button>
+                    <button class="typeBtn" id="updateFileBtn">
+                        <div>更新版本</div>
+                    </button>
+                    <button class="typeBtn" id="deleteFileBtn">
+                        <div>刪除版本</div>
+                    </button>
+                </div>
+            </div>
+            <section id="functionSec" class="section">
+
+                <div class="tableGrid" id="globalFunctTable">
+                    <div class="tableHeader">版本 </div>
+                    <div class="tableHeader" id="h2">修改時間</div>
+
+                </div>
+            </section>
+        </div>
+
+        <section id=" functionCaller " class="section nodisplay ">
+            <header class="classifyHeader nodisplay ">Header</header>
+            <code class="coreCode ">
+            <span class="codeKeyword ">function</span>
+            <span> </span>
+        </code>
+            <div class="codeLineNoDiv ">
+                <div>
+                    <div>
+                        <span id="filename ">filename</span>
+                        <span>: Line </span>
+                        <span id="linenum ">linenum</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coreInfo ">description</div>
+            <div id="coreUpdated ">
+                <span>Last Update: </span>
+                <span id="UpdatedBy ">UpdatedBy</span>;
+                <span id="UpdateDate ">UpdateDate</span>
+            </div>
+        </section>
+
+
+    </div>
+
+    </div>
+
+    <script src="/Static/manyOperation.js ">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+</body>
+
+</html>

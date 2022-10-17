@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/docUI.css" />
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+</head>
+
+<body>
+
+    <nav id="appNav">
+        <div id="appColor"></div>
+        <a class="Tools">
+            <div class="topBtns" id="menuBtn">
+                <div class="topIcons">
+                    <img src="/img/menu.png">
+                </div>
+            </div>
+        </a>
+        <a class="Tools">
+            <div class="topBtns" id="homeBtn">
+                <div class="topIcons">
+                    <img src="/img/home.png">
+                </div>
+            </div>
+        </a>
+        <header id="header">
+            <span id="appHeaderTitle">JS Documentation</span>
+        </header>
+        <a class="Tools">
+            <div class="topBtns" id="goBackBtn">
+                <div class="topIcons">
+                    <img src="/img/goback.png">
+                </div>
+            </div>
+        </a>
+        <!-- <a class="Tools">
+		<div class="topBtns" id="settingBtn">
+			<div class="topIcons">
+				<img src="/img/setting.png">
+			</div>
+		</div>
+	</a> -->
+    </nav>
+    <div class="page " id="documentationOperation">
+
+        <nav id="documentationNav">
+            <div class="searchBar">
+                <input name="searchKeyword" placeholder="輸入並進行搜索..." class="searchFrame" id="searchKey">
+                <div class="searchBarBtn" id="clearSearchBar">✖</div>
+                <div class="searchBarBtn" id="caseSwitch">Ab</div>
+                <div class="searchBarBtn" id="regexpMode">Reg</div>
+            </div>
+
+            <div class="dirLinkItem nodisplay">
+                <div class="header">
+                    <div class="dirLinkItemToggler">▶︎</div>
+                    <div class="dirLinkItemTxt"></div>
+                </div>
+                <div class="container"></div>
+                <div class="nodisplay">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- <button id="testbtn">test</button> -->
+        </nav>
+
+        <nav id="menuNav">
+
+            <div class="menuBar">
+                <header class="menuHeader">Tags Search</header>
+                <div class="menuListBtn" id="tagSearshBtn">▼</div>
+            </div>
+            <div class="listContainer" id="tagsList">
+                <div class="searchBar nodisplay" id="tagSearchBar">
+                    <input name="searchTags" placeholder="搜索Tags..." class="searchFrame" id="searchTags">
+                </div>
+            </div>
+
+            <div class="menuBar">
+                <header class="menuHeader">Advanced Search</header>
+                <div class="menuListBtn" id="gotoSearch">⇨</div>
+            </div>
+        </nav>
+
+        <!-- The right page. -->
+        <div id="docummentationVersion">
+            <div id="topDirectory">
+                <div id="horDirectory"></div>
+            </div>
+
+            <div id="homeScreen" class="nodisplay">
+                <div class="ssLogo">
+                    <img src="/img/document.png" class="ssLogoImg">
+                    <div class="ssLogoTxt">
+                        <div class="ssTitle">JS Documentation</div>
+                        <div class="ssSubTitle">Automated Generate Result of Document Parser</div>
+                    </div>
+                </div>
+                <div id="listFilesFolders">
+                    <a class="listItem tileLink nodisplay">listItem</a>
+                </div>
+            </div>
+
+            <div id="advancedSearchTitle" class="nodisplay">
+                <div class="ssLogo">
+                    <img src="/img/search.png" class="ssLogoImg">
+                    <div class="ssLogoTxt">
+                        <div class="ssTitle">Advanced Search</div>
+                        <div class="ssSubTitle">Provide more searching selections</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section nodisplay" id="searchSelection">
+                <div class="searchSelectionBtn">
+                    <span>Parameter</span>
+                </div>
+                <div class="searchSelectionBtn">
+                    <span>Return</span>
+                </div>
+            </div>
+
+            <div class="upTags nodisplay">
+                <div class="tag">
+                    <div class="tagTxt">deprecated</div>
+                </div>
+            </div>
+
+            <header id="itemHeader" class="nodisplay">header</header>
+            <div id="itemDescription" class="info nodisplay">description</div>
+
+            <div id="extendsSection" class="section nodisplay">
+                <h2 class="secHeader">Extends...</h2>
+                <div id="extendsPath"></div>
+            </div>
+
+            <section id="constructorSec" class="section nodisplay">
+                <h2 class="secHeader">Constructor</h2>
+            </section>
+
+            <section id="functionCaller" class="section nodisplay">
+                <header class="classifyHeader nodisplay">Header</header>
+                <code class="coreCode">
+				<span class="codeKeyword">function</span>
+				<span> </span>
+			</code>
+                <div class="codeLineNoDiv">
+                    <div>
+                        <div>
+                            <span id="filename">filename</span>
+                            <span>: Line </span>
+                            <span id="linenum">linenum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coreInfo">description</div>
+                <div id="coreUpdated">
+                    <span>Last Update: </span>
+                    <span id="UpdatedBy">UpdatedBy</span>;
+                    <span id="UpdateDate">UpdateDate</span>
+                </div>
+            </section>
+
+            <section class="section nodisplay" id="headerSection">
+                <header class="classifyHeader">Header</header>
+            </section>
+
+            <section class="section twoBlankSection nodisplay">
+                <h2 class="secHeader">TwoBlank</h2>
+                <div class="tableGrid">
+                    <div class="tableHeader">A</div>
+                    <div class="tableHeader">B</div>
+                    <div class="tableBlankL nodisplay">blank</div>
+                    <div class="tableBlankR nodisplay">blank</div>
+                </div>
+            </section>
+
+            <section class="section threeBlankSection nodisplay">
+                <h2 class="secHeader">ThreeBlank</h2>
+                <div class="tableGrid2">
+                    <div class="tableHeader">A</div>
+                    <div class="tableHeader">B</div>
+                    <div class="tableHeader">C</div>
+                    <div class="tableBlankL nodisplay">blank</div>
+                    <div class="tableBlankM nodisplay">blank</div>
+                    <div class="tableBlankR nodisplay">blank</div>
+                </div>
+            </section>
+
+            <section class="section nodisplay" id="tagsSection">
+                <h2 class="secHeader">Tags</h2>
+                <div class="downTags">
+
+                </div>
+            </section>
+
+            <section class="section nodisplay" id="moreInfo">
+                <h2 class="secHeader">Header</h2>
+                <div class="coreInfo">info</div>
+            </section>
+
+            <section id="constParamSec" class="section nodisplay">
+                <h2 class="secHeader">Constructor Parameters</h2>
+                <div class="tableGrid2" id="constParamTable">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader">Data Type</div>
+                    <div class="tableHeader" id="CPSheader">Description</div>
+                </div>
+            </section>
+
+            <section id="classesSec" class="section nodisplay">
+                <h2 class="secHeader">Classes</h2>
+                <div class="tableGrid" id="classTable">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader" id="h1">Description</div>
+                </div>
+            </section>
+
+            <section id="functionSec" class="section nodisplay">
+                <h2 class="secHeader">Global Functions</h2>
+                <div class="tableGrid" id="globalFunctTable">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader" id="h2">Description</div>
+                </div>
+            </section>
+
+            <section id="propertySec" class="section nodisplay">
+                <h2 class="secHeader">Properties</h2>
+                <div class="tableGrid2" id="propertyTable">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader">Data Type</div>
+                    <div class="tableHeader" id="hProperty">Description</div>
+                </div>
+            </section>
+
+            <section id="staticMethodSec" class="section nodisplay">
+                <h2 class="secHeader">Static Methods</h2>
+                <div class="tableGrid2" id="staticMethodTable">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader">Returns Type</div>
+                    <div class="tableHeader" id="h3">Description</div>
+                </div>
+            </section>
+
+            <section id="paramSec" class="section nodisplay">
+                <h2 class="secHeader">Parameters</h2>
+                <div class="tableGrid2">
+                    <div class="tableHeader">Name</div>
+                    <div class="tableHeader">Data Type</div>
+                    <div class="tableHeader" id="h4">Description</div>
+                </div>
+            </section>
+
+            <section id="returnSec" class="section nodisplay">
+                <h2 class="secHeader">Returns</h2>
+                <div class="tableGrid">
+                    <div class="tableHeader">Data Type</div>
+                    <div class="tableHeader" id="h5">Description</div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="/Static/docOp.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
